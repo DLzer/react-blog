@@ -17,6 +17,11 @@ function AuthorPage({ cosmic }) {
       </Head>
       <Header cosmic={ cosmic }/>
       <main className="container">
+        <h1>About {cosmic.author.title}</h1>
+        <p>
+        I'm a craftsman of sorts. I peer into the deepest corners of a computers brain. I pick apart the bits and bytes. I wade through the endless void of streaming data. I'm merely another body in the gears of the apparatus. I am a software engineer.
+        </p>
+        <br></br>
         <h1>Posts by {cosmic.author.title}</h1>
         {
           !cosmic.posts &&
