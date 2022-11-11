@@ -38,12 +38,13 @@ function Post({ cosmic }) {
       <Head>
         <title key="sitetitle">{ cosmic.post.title }</title>
       </Head>
-      <Header cosmic={ cosmic }/>
+      {/* <Header cosmic={ cosmic }/>
       {
         cosmic.post && cosmic.post.metadata.hero.imgix_url &&
         <div className="blog-post-hero" style={{ backgroundImage: `url(${cosmic.post.metadata.hero.imgix_url}?w=2000&auto=format)`}}></div>
-      }
+      } */}
       <main className="container">
+        <div className="inner-container">
         <div className="card-padding">
           <h2 className="blog__title">
             {
@@ -59,17 +60,18 @@ function Post({ cosmic }) {
             cosmic.post &&
             <div>
               <div className="blog__author">
-                <Link href={`/author/${cosmic.post.metadata.author.slug}`}>
+                {/* <Link href={`/author/${cosmic.post.metadata.author.slug}`}>
                   <a>
                     <div className="blog__author-image" style={{ backgroundImage: `url(${cosmic.post.metadata.author.metadata.image.imgix_url}?w=100)`}}></div>
                   </a>
-                </Link>
+                </Link> */}
                 <div className="blog__author-title">by <Link href={`/author/${cosmic.post.metadata.author.slug}`}><a>{cosmic.post.metadata.author.title}</a></Link> on {cosmic.post.friendly_date}</div>
                 <div className="clearfix"></div>
               </div>
               <div className="blog__teaser droid" dangerouslySetInnerHTML={{__html: cosmic.post.content}}></div>
             </div>
           }
+        </div>
         </div>
       </main>
       <Footer />

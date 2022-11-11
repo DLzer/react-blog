@@ -13,10 +13,11 @@ function Home({ cosmic }) {
   return (
     <div>
       <Head>
-        <title key="sitetitle">{ cosmic.post ? cosmic.post.title + ' |' : '' } Simple React Blog</title>
+        <title key="sitetitle">{ cosmic.post ? cosmic.post.title + ' |' : '' } Dillon Lomnitzer | Blog</title>
       </Head>
       <Header cosmic={ cosmic }/>
       <main className="container">
+        <div className="inner-container">
         {
           !cosmic.posts &&
           'You must add at least one Post to your Bucket'
@@ -29,6 +30,7 @@ function Home({ cosmic }) {
             return <div key={post.id}><PostCard post={post} /></div>
           })
         }
+        </div>
       </main>
       <Footer />
     </div>
