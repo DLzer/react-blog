@@ -258,3 +258,11 @@ pre {
     opacity:0;
   }
 }
+
+strong em {
+  color: #a79494;
+  background-color: #100f0f;
+  overflow-x: auto;
+  padding: 15px;
+  border-radius: 10px;
+}
