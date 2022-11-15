@@ -263,6 +263,7 @@ strong em {
   color: #a79494;
   background-color: #100f0f;
   overflow-x: auto;
-  padding: 15px;
+  padding: 5px 5px;
   border-radius: 10px;
+  font-style: initial;
 }
