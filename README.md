@@ -1,1 +1,1 @@
-# A blog, by me!
+# A blog, by me! Built with React-Next.
